@@ -1,0 +1,19 @@
+//这是单行注释，css不支持
+/* 这是双行注释，css支持 */
+//全局变量
+$mianColor:#58bc58;
+.goods{
+    /* 修改全局变量 */
+    $pd:10px !global;
+    padding:$pd;
+    border: 1px solid $mianColor;
+
+}
+.page{
+    padding:$pd;
+    background-color: #efefef;
+    span{display: inline-block;padding: 5px;color: #666;border: 1px solid #ccc;}
+}
+nav{border-bottom: 2px solid #ddd;background-color: $mianColor;
+    li{display: inline-block;padding: 5px 10px;color: pink;}
+} 
